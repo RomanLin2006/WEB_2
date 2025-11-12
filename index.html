@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашняя страница — Роман Линейцев</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1 class="logo">Моя страница</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#welcome">Главная</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#schedule">Учеба</a></li>
+                    <li><a href="#feedback">Форма</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="auth.html">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="welcome" class="section">
+            <div class="container welcome-block">
+                <div class="text">
+                    <h2>Привет, я Роман!</h2>
+                    <p>Я учусь на втором курсе Московского Политеха и осваиваю основы веб-разработки. Этот сайт я сделал, чтобы показать, как базовые теги HTML и простые стили помогают собрать аккуратную домашнюю страницу.</p>
+                    <p>На странице есть шапка с меню, изображение, список моих увлечений, таблица с расписанием и блок с контактами.</p>
+                </div>
+                <div class="photo-wrapper">
+                    <img src="https://storage.yandexcloud.net/fotora.ru/uploads/891a2e4f1d5a7c8f.png" alt="Иллюстрация студента, приветствующего посетителей сайта">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section light">
+            <div class="container">
+                <h2>Чем я увлекаюсь</h2>
+                <p>Я стараюсь развиваться в разных направлениях, чтобы лучше понимать, как создаются современные сайты и приложения.</p>
+                <ul class="plain-list">
+                    <li>читаю статьи про HTML, CSS и основы JavaScript;</li>
+                    <li>рисую эскизы интерфейсов и пробую себя в дизайне;</li>
+                    <li>участвую в университетских клубах по программированию;</li>
+                    <li>помогаю одногруппникам разбирать домашние задания.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="schedule" class="section">
+            <div class="container">
+                <h2>Учебное расписание на неделю</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>День</th>
+                            <th>Предмет</th>
+                            <th>Задача на неделю</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Понедельник</td>
+                            <td>Основы веб-технологий</td>
+                            <td>Повторить структуру HTML-документа</td>
+                        </tr>
+                        <tr>
+                            <td>Среда</td>
+                            <td>Практика по CSS</td>
+                            <td>Настроить отступы и цвета для блоков</td>
+                        </tr>
+                        <tr>
+                            <td>Пятница</td>
+                            <td>Командный проект</td>
+                            <td>Собрать простую страницу портфолио</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="feedback" class="section light">
+            <div class="container">
+                <h2>Форма обратной связи</h2>
+                <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+                    <p><strong>ФИО:</strong><br>
+                        <input type="text" name="fullname" maxlength="50" size="40" required>
+                    </p>
+                    <p><strong>Email:</strong><br>
+                        <input type="email" name="email" size="40" required>
+                    </p>
+                    <p><strong>Откуда узнали о нас:</strong><br>
+                        <input type="radio" name="source" value="friends" required> От друга<br>
+                        <input type="radio" name="source" value="internet"> Из интернета<br>
+                        <input type="radio" name="source" value="university"> Университет<br>
+                        <input type="radio" name="source" value="other"> Другое
+                    </p>
+                    <p><strong>Тип обращения:</strong><br>
+                        <select name="topic" size="1" style="width: 160px;">
+                            <option value="complaint">Жалоба</option>
+                            <option value="suggestion">Предложение</option>
+                        </select>
+                    </p>
+                    <p><strong>Текст сообщения:</strong><br>
+                        <textarea name="message" rows="6" cols="45" required></textarea>
+                    </p>
+                    <p><strong>Вложения:</strong><br>
+                        <input type="file" name="attachment">
+                    </p>
+                    <p>
+                        <label><input type="checkbox" name="consent" value="yes" required> Даю согласие на обработку персональных данных</label>
+                    </p>
+                    <p><input type="submit" value="Отправить"></p>
+                </form>
+            </div>
+        </section>
+
+        <section id="contacts" class="section">
+            <div class="container">
+                <h2>Как со мной связаться</h2>
+                <p>Если хотите обсудить учебные задания или поделиться идеями по улучшению этого сайта, напишите мне удобным способом.</p>
+                <div class="contact-block">
+                    <p><strong>Телефон:</strong> <a href="tel:+79248337781">+7 924 833-77-81</a></p>
+                    <p><strong>Почта:</strong> <a href="mailto:romanxxxl2006@yandex.ru">romanxxxl2006@yandex.ru</a></p>
+                    <p><strong>Адрес:</strong> Москва, Большая Семёновская, 38</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>© 2025 Роман Линейцев. Домашнее задание по основам веб-разработки.</p>
+            <p>Сделано только с базовыми тегами и простыми стилями.</p>
+        </div>
+    </footer>
+</body>
+</html>
