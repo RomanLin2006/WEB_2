@@ -89,6 +89,8 @@
             <div class="container">
                 <h2>Форма обратной связи</h2>
                 <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+                  <fieldset>
+                    <div class="container-form">
                     <p><strong>ФИО:</strong><br>
                         <input type="text" name="fullname" maxlength="50" size="40" required>
                     </p>
@@ -117,6 +119,8 @@
                         <label><input type="checkbox" name="consent" value="yes" required> Даю согласие на обработку персональных данных</label>
                     </p>
                     <p><input type="submit" value="Отправить"></p>
+                    </div>
+                  </fieldset>
                 </form>
             </div>
         </section>

@@ -9,6 +9,14 @@ body {
     background-color: #f4f4f4;
 }
 
+fieldset{
+    text-align: center;
+    max-width: 520px;
+    padding: 16px 24px;
+    border: 1px solid #bbbbbb;
+    border-radius: 8px;
+}
+
 header {
     background-color: #111111;
     color: #ffffff;
@@ -117,6 +125,5 @@ textarea {
     background-color: #f4f4f4;
     border: 1px solid #bbbbbb;
     border-radius: 4px;
-    font: inherit;
     cursor: pointer;
 }
